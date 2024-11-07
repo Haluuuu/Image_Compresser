@@ -21,6 +21,14 @@ Image_Compress es un proyecto universitario desarrollado para poner en práctica
    git clone https://github.com/Haluuuu/Image_Compresser.git
    cd Image_Compress
 
+2.Crear Entorno Virtual
+
+      python -m venv .venv
+
+3.Activar Entorno Virutal
+
+      .venv\Scripts\activate
+
 2.Instala las dependencias:
 
       pip install -r requirements.txt
