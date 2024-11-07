@@ -28,6 +28,8 @@ class Worker(QtCore.QObject):
         except Exception as e:
             self.finished.emit(f"Error: {str(e)}")  # Emitir el error
 
+
+#Seccion para la vista.
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -127,6 +129,7 @@ class MainWindow(QtWidgets.QMainWindow):
             }
         """
 
+#Seccion para selecionar la imagen y verificar que todo esta correcto.
     def cargar_imagen(self):
         self.ruta_imagen, _ = QtWidgets.QFileDialog.getOpenFileName(self, "Selecciona una imagen", "", "Imágenes (*.png *.jpg *.jpeg)")
         if self.ruta_imagen:
