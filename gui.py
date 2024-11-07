@@ -2,6 +2,8 @@ from PyQt5 import QtWidgets, QtCore, QtGui
 import os
 from image_processor import comprimir_imagen  # Importa la función de compresión
 
+#Esta seccion es para generar las vistas de la aplicacion, ademas de tomar y verificar que la imagen y directorio son correctos.
+
 class Worker(QtCore.QObject):
     finished = QtCore.pyqtSignal(str)  # Señal para indicar que ha terminado
     progress = QtCore.pyqtSignal(int)    # Señal para actualizar el progreso

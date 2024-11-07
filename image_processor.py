@@ -2,6 +2,7 @@ import os
 import numpy as np
 from PIL import Image
 
+#Esta seccion es donde se procesan las imagnes para reducir su tamaño
 def comprimir_imagen(ruta_imagen, carpeta_destino):
     if not ruta_imagen or not carpeta_destino:
         raise ValueError("Ruta de imagen y carpeta de destino son requeridas.")
